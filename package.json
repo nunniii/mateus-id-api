@@ -1,0 +1,30 @@
+{
+  "name": "mateus-id-api",
+  "version": "1.0.0",
+  "description": "API for requesting requests for data from Mateus.",
+  "main": "./src/app.js",
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateusnssn/mateus-id-api.git"
+  },
+  "keywords": [],
+  "author": "Mateus Nunes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateusnssn/mateus-id-api/issues"
+  },
+  "homepage": "https://github.com/mateusnssn/mateus-id-api#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
