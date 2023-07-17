@@ -4,6 +4,9 @@ const basePath = `${__dirname}/../views/`;
 const controllers = {
 
     index: {
+        index(request, response) {
+            response.status(200).send(`Hello uwu`);
+        },
         index_get_access(request, response) {
             response.status(200).render(`${basePath}request-access`);
         },
@@ -28,6 +31,19 @@ const controllers = {
 
 
 
+
+
+
+
+
+    toolsFromOtherScopes: {
+        photo(request, response) {
+            const { username } = request.params
+            const data = {srcPhoto: `https://github.com/${username}.png`, altPhoto: `${username}`}
+            if(!username) response.send("Cannot be null")
+            else response.status(200).render(`${basePath}photo`, { data })
+        }
+    },
 
 
     generalControllers: {

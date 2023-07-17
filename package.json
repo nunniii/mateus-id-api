@@ -4,7 +4,8 @@
   "description": "API for requesting requests for data from Mateus.",
   "main": "./src/app.js",
   "scripts": {
-    "dev": "nodemon ."
+    "dev": "nodemon .",
+    "start": "node ."
   },
   "repository": {
     "type": "git",
